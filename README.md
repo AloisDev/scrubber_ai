@@ -8,12 +8,14 @@ This is Scrubber AI, a FastAPI application that uses MariaDB for data storage. F
 
 ### Prerequisites
 
-- Python 3.6+
-- FastAPI
-- MariaDB
-- A MariaDB connector for Python, like PyMySQL or mysql-connector-python
+- fastapi
+- mariadb
+- SQLAlchemy
+- starlette
+- uvicorn
 
-You can install the necessary Python libraries with pip:
+You can install the necessary Python libraries with pip: 
+pip install -r requirements.txt
 
 ## Installation
 
