@@ -16,7 +16,7 @@ router = APIRouter()
 
 
 # This token endpoint accespts username and password (in form) and returns a token.
-# this option has a grant_type, username, password, scope client_id and client_secret fields that can be used out of the box as it uses OAuth2PasswordRequestForm
+# this option has a grant_type, username, password,  client_id and client_secret fields that can be used out of the box as it uses OAuth2PasswordRequestForm
 
 
 @router.post(
@@ -35,7 +35,12 @@ async def login_for_access_token(
         )
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
-        data={"sub": user.email}, expires_delta=access_token_expires
+        data={
+            "sub": user.email,
+            "firstName": user.firstName,
+            "lastName": user.lastName,
+        },
+        expires_delta=access_token_expires,
     )
     return {"access_token": f"Bearer {access_token}"}
 

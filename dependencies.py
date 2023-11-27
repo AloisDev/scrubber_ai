@@ -3,6 +3,7 @@ from fastapi.security import (
     HTTPAuthorizationCredentials,
     HTTPBearer,
     OAuth2PasswordBearer,
+    SecurityScopes
 )
 from jose import JWTError, jwt
 from sqlalchemy import create_engine
@@ -68,6 +69,7 @@ def authenticate_user(db: Session, email: str, password: str):
 
 def create_access_token(data: dict, expires_delta: timedelta | None = None):
     to_encode = data.copy()
+    print(data)
     if expires_delta:
         expire = datetime.utcnow() + expires_delta
     else:
@@ -111,7 +113,12 @@ def replace_user_in_db(db: Session, user_id: int, user: schemas.UserCreate):
 
 def create_user_in_db(db: Session, user: schemas.UserCreate):
     hashedPassword = get_password_hash(user.password)
-    db_user = models.User(email=user.email, password=hashedPassword)
+    db_user = models.User(
+        email=user.email,
+        firstName=user.firstName,
+        lastName=user.lastName,
+        password=hashedPassword,
+    )
     db.add(db_user)
     db.commit()
     db.refresh(db_user)
