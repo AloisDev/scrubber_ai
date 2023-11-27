@@ -1,9 +1,10 @@
+import logging
 from fastapi import Depends, HTTPException, status
 from fastapi.security import (
     HTTPAuthorizationCredentials,
     HTTPBearer,
     OAuth2PasswordBearer,
-    SecurityScopes
+    SecurityScopes,
 )
 from jose import JWTError, jwt
 from sqlalchemy import create_engine
@@ -69,7 +70,6 @@ def authenticate_user(db: Session, email: str, password: str):
 
 def create_access_token(data: dict, expires_delta: timedelta | None = None):
     to_encode = data.copy()
-    print(data)
     if expires_delta:
         expire = datetime.utcnow() + expires_delta
     else:
@@ -90,6 +90,7 @@ def get_all_users(db: Session, skip: int = 0, limit: int = 100):
 def update_user_in_db(db: Session, user_id: int, user: schemas.UserUpdate):
     db_user = get_user_by_id(db, user_id=user_id)
     if db_user is None:
+        logging.error(f"User not found")
         raise HTTPException(status_code=404, detail="User not found")
     if user.email is not None:
         db_user.email = user.email
@@ -103,6 +104,7 @@ def update_user_in_db(db: Session, user_id: int, user: schemas.UserUpdate):
 def replace_user_in_db(db: Session, user_id: int, user: schemas.UserCreate):
     db_user = get_user_by_id(db, user_id=user_id)
     if db_user is None:
+        logging.error(f"User not found")
         raise HTTPException(status_code=404, detail="User not found")
     for var, value in user.model_dump().items():
         setattr(db_user, var, value)

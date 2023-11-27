@@ -87,5 +87,6 @@ class Document(BaseModel):
 class User(UserBase):
     id: int
 
-    class Config:
-        from_attributes = True
+
+class Config:
+    allow_mutation = True

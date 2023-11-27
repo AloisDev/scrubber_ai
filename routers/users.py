@@ -1,3 +1,4 @@
+import logging
 from fastapi import Depends, HTTPException
 from sqlalchemy.orm import Session
 from dependencies import (
@@ -26,8 +27,11 @@ models.Base.metadata.create_all(bind=engine)
 async def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     db_user = get_user_by_email(db, email=user.email)
     if db_user:
+        logging.error(f"User already registered")
         raise HTTPException(status_code=409, detail="User already registered")
-    return create_user_in_db(db=db, user=user)
+    new_user = create_user_in_db(db=db, user=user)
+    logging.info(f"New user with email {new_user.email} created.")
+    return new_user
 
 
 @router.get(
@@ -59,6 +63,7 @@ async def read_user(
 ):
     db_user = get_user_by_id(db, user_id=user_id)
     if db_user is None:
+        logging.error(f"User not found")
         raise HTTPException(status_code=404, detail="User not found")
     return db_user
 
@@ -106,6 +111,7 @@ async def delete_user(
 ):
     current_user = get_user_by_id(db, user_id=user_id)
     if current_user is None:
+        logging.error(f"User not found")
         raise HTTPException(status_code=404, detail="User not found")
     username = current_user.username
     db.delete(current_user)

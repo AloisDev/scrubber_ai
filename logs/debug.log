@@ -1,0 +1,10 @@
+2023-11-27 16:18:28,435 [INFO] User endpoint called with user_id: 3
+[INFO] 2023-11-27 16:19:20,281 User endpoint called with user_id: 3
+[INFO] 2023-11-27 16:19:50,478 User endpoint called with user_id: 4
+[INFO] 2023-11-27 16:20:03,155 User endpoint called with user_id: 2
+[INFO] 2023-11-27 16:20:07,330 User endpoint called with user_id: 5
+[INFO] 2023-11-27 16:20:33,871 User endpoint called with user_id: 5
+[INFO] 2023-11-27 16:23:03,724 New User created: <models.User object at 0x000002567925A990>
+[INFO] 2023-11-27 16:23:34,737 New User created: admin2@admin.com
+[INFO] 2023-11-27 17:25:01,200 New user with email string created.
+[ERROR] 2023-11-27 17:25:20,342 User already registered
