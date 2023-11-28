@@ -88,5 +88,13 @@ class User(UserBase):
     id: int
 
 
+class OpenAIResponse(BaseModel):
+    Determination: str
+    Reasoning: str
+    Query: str
+    Context: Optional[str]
+    Raw_Output: str
+
+
 class Config:
     allow_mutation = True

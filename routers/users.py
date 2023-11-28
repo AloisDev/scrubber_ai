@@ -113,7 +113,7 @@ async def delete_user(
     if current_user is None:
         logging.error(f"User not found")
         raise HTTPException(status_code=404, detail="User not found")
-    username = current_user.username
+    username = current_user.firstName + " " + current_user.lastName
     db.delete(current_user)
     db.commit()
     return f"{username} deleted succesfuly"

@@ -16,10 +16,10 @@ models.Base.metadata.create_all(bind=engine)
 
 
 @router.post(
-    "/documents",
-    response_model=None,
+    "/process",
+    response_model=schemas.OpenAIResponse,
     tags=["Documents"],
-    summary="Process documentation.",
+    summary="Process document.",
 )
 async def analyze_document(
     document: schemas.Document,

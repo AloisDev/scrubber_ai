@@ -1,6 +1,6 @@
 from fastapi import Depends, FastAPI
 import logging
-from logging.handlers import RotatingFileHandler
+from logging.handlers import RotatingFileHandler, TimedRotatingFileHandler
 from routers import documents, users, auth
 
 # import uvicorn
@@ -11,12 +11,15 @@ logging.basicConfig(
     handlers=[
         RotatingFileHandler("logs/debug.log", maxBytes=100000, backupCount=10),
         logging.StreamHandler(),
+        TimedRotatingFileHandler(
+            "logs/debug_daily.log", when="D", interval=1, backupCount=7
+        ),
     ],
 )
 
 app = FastAPI(
     title="Scrubber AI API",
-    description="Scrubber AI APIs documentation",
+    description="Scrubber AI API documentation",
     version="1.0.0",
 )
 

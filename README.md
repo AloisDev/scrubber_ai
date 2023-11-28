@@ -2,7 +2,8 @@
 
 [![FastAPI](https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png)](https://fastapi.tiangolo.com/)
 
-This is Scrubber AI, an AI integration...
+This is Scrubber AI, an intelligent document evaluation system that leverages advanced natural language processing techniques to assess the correctness of a given document in relation to a specified prompt and the surrounding context. The system is designed to be accessible through an API, allowing seamless integration into various applications and workflows.
+
 
 ## Table of Contents
 
@@ -15,7 +16,7 @@ This is Scrubber AI, an AI integration...
 
 ## Installation
 
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/AloisDev/scrubber_ai.git
 
 cd your-repo-name
 
