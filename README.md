@@ -22,6 +22,24 @@ cd your-repo-name
 
 pip install -r requirements.txt
 
+recommended vscode settings
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.detectIndentation": true,
+    "python.missingPackage.severity": "Warning",
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.analysis.indexing": true,
+    "python.analysis.autoImportCompletions": true,
+}
+
 ## Usage
 uvicorn main:app --reload
 
