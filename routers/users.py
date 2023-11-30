@@ -1,18 +1,18 @@
 import logging
-from fastapi import Depends, HTTPException
+from fastapi import Depends, HTTPException, APIRouter
 from sqlalchemy.orm import Session
-from dependencies import (
+from database.db import get_db
+from database.users import (
     create_user_in_db,
     decode_token,
     get_all_users,
-    get_db,
-    get_user_by_id,
     get_user_by_email,
-    engine,
+    get_user_by_id,
     replace_user_in_db,
     update_user_in_db,
 )
-from fastapi import APIRouter
+from database.db import engine
+
 import models
 import schemas
 

@@ -8,3 +8,130 @@
 [INFO] 2023-11-27 16:23:34,737 New User created: admin2@admin.com
 [INFO] 2023-11-27 17:25:01,200 New user with email string created.
 [ERROR] 2023-11-27 17:25:20,342 User already registered
+[INFO] 2023-11-29 13:45:38,041 validating address
+[INFO] 2023-11-29 13:45:38,045 https://addressvalidation.googleapis.com/v1:validateAddress?
+[INFO] 2023-11-29 13:45:38,045 {'key': 'AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE'}
+[INFO] 2023-11-29 14:15:48,340 validating address
+[INFO] 2023-11-29 14:15:48,341 https://addressvalidation.googleapis.com/v1:validateAddress?
+[INFO] 2023-11-29 14:15:48,342 {'key': 'AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE'}
+[INFO] 2023-11-29 14:18:11,282 validating address
+[INFO] 2023-11-29 14:18:11,283 https://addressvalidation.googleapis.com/v1:validateAddress?
+[INFO] 2023-11-29 14:18:11,283 {'key': 'AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE'}
+[INFO] 2023-11-29 14:18:11,284 mapping address
+[INFO] 2023-11-29 17:35:00,298 validating address
+[INFO] 2023-11-29 17:35:00,514 params
+[INFO] 2023-11-29 17:35:00,514 mapping address
+[INFO] 2023-11-29 17:36:32,648 validating address
+[INFO] 2023-11-29 17:36:32,682 params
+[INFO] 2023-11-29 17:36:32,683 mapping address
+[INFO] 2023-11-29 17:42:40,522 validating address
+[INFO] 2023-11-29 17:42:40,557 params
+[INFO] 2023-11-29 17:42:40,558 mapping address
+[INFO] 2023-11-29 17:46:35,309 validating address
+[INFO] 2023-11-29 17:46:35,340 params
+[INFO] 2023-11-29 17:46:35,340 mapping address
+[INFO] 2023-11-29 17:46:36,570 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:50:57,044 validating address
+[INFO] 2023-11-29 17:50:57,090 params
+[INFO] 2023-11-29 17:50:57,091 mapping address
+[INFO] 2023-11-29 17:50:58,139 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:50:58,147 result
+[INFO] 2023-11-29 17:55:08,366 validating address
+[INFO] 2023-11-29 17:55:08,409 params
+[INFO] 2023-11-29 17:55:08,411 mapping address
+[INFO] 2023-11-29 17:55:09,560 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:55:09,566 result
+[INFO] 2023-11-29 17:56:00,153 validating address
+[INFO] 2023-11-29 17:56:00,185 params
+[INFO] 2023-11-29 17:56:00,186 mapping address
+[INFO] 2023-11-29 17:56:01,210 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:56:01,216 result
+[INFO] 2023-11-29 17:56:02,299 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:56:02,303 result
+[INFO] 2023-11-29 17:56:03,536 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:56:03,538 result
+[INFO] 2023-11-29 17:56:05,008 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:56:05,018 result
+[INFO] 2023-11-29 17:56:06,918 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:56:06,927 result
+[INFO] 2023-11-29 17:56:09,559 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:56:09,567 result
+[INFO] 2023-11-29 17:56:13,854 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:56:13,863 result
+[INFO] 2023-11-29 17:56:51,470 validating address
+[INFO] 2023-11-29 17:56:51,504 params
+[INFO] 2023-11-29 17:56:51,505 mapping address
+[INFO] 2023-11-29 17:56:52,524 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:56:53,789 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:56:55,102 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:56:56,537 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:56:58,329 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:57:00,918 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:57:05,119 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 17:58:26,770 validating address
+[INFO] 2023-11-29 17:58:26,804 params
+[INFO] 2023-11-29 17:58:26,804 mapping address
+[INFO] 2023-11-29 18:00:05,284 validating address
+[INFO] 2023-11-29 18:00:05,320 params
+[INFO] 2023-11-29 18:00:05,320 mapping address
+[INFO] 2023-11-29 18:07:00,952 validating address
+[INFO] 2023-11-29 18:07:00,990 mapping address
+[INFO] 2023-11-29 18:07:16,397 validating address
+[INFO] 2023-11-29 18:07:16,433 mapping address
+[INFO] 2023-11-29 18:07:17,586 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:07:18,774 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:07:20,036 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:07:21,554 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:07:23,431 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:07:26,086 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:07:30,415 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:15:05,784 {"address": {"regionCode": "US", "postalCode": "70072", "administrativeArea": "LA", "locality": "Marrero", "addressLines": ["2708 Long Branch Dr", ""]}}
+[INFO] 2023-11-29 18:15:06,855 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:15:06,863 <Response [200 OK]>
+[INFO] 2023-11-29 18:15:06,864 Waiting 0.1, seconds before retrying.
+[INFO] 2023-11-29 18:15:06,971 {"address": {"regionCode": "US", "postalCode": "70072", "administrativeArea": "LA", "locality": "Marrero", "addressLines": ["2708 Long Branch Dr", ""]}}
+[INFO] 2023-11-29 18:15:07,931 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:15:07,938 <Response [200 OK]>
+[INFO] 2023-11-29 18:15:07,939 Waiting 0.2, seconds before retrying.
+[INFO] 2023-11-29 18:15:08,123 {"address": {"regionCode": "US", "postalCode": "70072", "administrativeArea": "LA", "locality": "Marrero", "addressLines": ["2708 Long Branch Dr", ""]}}
+[INFO] 2023-11-29 18:15:09,154 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:15:09,162 <Response [200 OK]>
+[INFO] 2023-11-29 18:15:09,163 Waiting 0.4, seconds before retrying.
+[INFO] 2023-11-29 18:15:09,572 {"address": {"regionCode": "US", "postalCode": "70072", "administrativeArea": "LA", "locality": "Marrero", "addressLines": ["2708 Long Branch Dr", ""]}}
+[INFO] 2023-11-29 18:15:10,500 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:15:10,507 <Response [200 OK]>
+[INFO] 2023-11-29 18:15:10,508 Waiting 0.8, seconds before retrying.
+[INFO] 2023-11-29 18:15:11,324 {"address": {"regionCode": "US", "postalCode": "70072", "administrativeArea": "LA", "locality": "Marrero", "addressLines": ["2708 Long Branch Dr", ""]}}
+[INFO] 2023-11-29 18:15:12,278 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:15:12,285 <Response [200 OK]>
+[INFO] 2023-11-29 18:15:12,286 Waiting 1.6, seconds before retrying.
+[INFO] 2023-11-29 18:15:13,882 {"address": {"regionCode": "US", "postalCode": "70072", "administrativeArea": "LA", "locality": "Marrero", "addressLines": ["2708 Long Branch Dr", ""]}}
+[INFO] 2023-11-29 18:15:14,825 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:15:14,832 <Response [200 OK]>
+[INFO] 2023-11-29 18:15:14,833 Waiting 3.2, seconds before retrying.
+[INFO] 2023-11-29 18:15:18,042 {"address": {"regionCode": "US", "postalCode": "70072", "administrativeArea": "LA", "locality": "Marrero", "addressLines": ["2708 Long Branch Dr", ""]}}
+[INFO] 2023-11-29 18:15:18,993 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:15:19,000 <Response [200 OK]>
+[INFO] 2023-11-29 18:19:32,649 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:19:32,656 <Response [200 OK]>
+[INFO] 2023-11-29 18:20:29,951 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:20:29,959 <Response [200 OK]>
+[INFO] 2023-11-29 18:21:05,481 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:21:05,488 <Response [200 OK]>
+[INFO] 2023-11-29 18:25:38,185 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:25:38,191 {'result': {'verdict': {'inputGranularity': 'PREMISE', 'validationGranularity': 'PREMISE', 'geocodeGranularity': 'PREMISE', 'addressComplete': True, 'hasInferredComponents': True}, 'address': {'formattedAddress': '2708 Long Branch Drive, Marrero, LA 70072-5855, USA', 'postalAddress': {'regionCode': 'US', 'languageCode': 'en', 'postalCode': '70072-5855', 'administrativeArea': 'LA', 'locality': 'Marrero', 'addressLines': ['2708 Long Branch Dr']}, 'addressComponents': [{'componentName': {'text': '2708'}, 'componentType': 'street_number', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'Long Branch Drive', 'languageCode': 'en'}, 'componentType': 'route', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'Marrero', 'languageCode': 'en'}, 'componentType': 'locality', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'LA', 'languageCode': 'en'}, 'componentType': 'administrative_area_level_1', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': '70072'}, 'componentType': 'postal_code', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'USA', 'languageCode': 'en'}, 'componentType': 'country', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': '5855'}, 'componentType': 'postal_code_suffix', 'confirmationLevel': 'CONFIRMED', 'inferred': True}]}, 'geocode': {'location': {'latitude': 29.8541683, 'longitude': -90.0918128}, 'plusCode': {'globalCode': '76XFVW35+M7'}, 'bounds': {'low': {'latitude': 29.8540983, 'longitude': -90.0918765}, 'high': {'latitude': 29.8542679, 'longitude': -90.0917038}}, 'featureSizeMeters': 15.26942, 'placeId': 'ChIJ0Tmq6cCjIIYRXvnyNwgxWvQ', 'placeTypes': ['premise']}, 'metadata': {'business': False, 'poBox': False, 'residential': True}, 'uspsData': {'standardizedAddress': {'firstAddressLine': '2708 LONG BRANCH DR', 'cityStateZipAddressLine': 'MARRERO LA 70072-5855', 'city': 'MARRERO', 'state': 'LA', 'zipCode': '70072', 'zipCodeExtension': '5855'}, 'deliveryPointCode': '08', 'deliveryPointCheckDigit': '3', 'dpvConfirmation': 'Y', 'dpvFootnote': 'AABB', 'dpvCmra': 'N', 'dpvVacant': 'N', 'dpvNoStat': 'N', 'carrierRoute': 'C012', 'carrierRouteIndicator': 'D', 'postOfficeCity': 'MARRERO', 'postOfficeState': 'LA', 'fipsCountyCode': '051', 'county': 'JEFFERSON', 'elotNumber': '0227', 'elotFlag': 'A', 'addressRecordType': 'S', 'dpvDrop': 'N', 'dpvThrowback': 'N', 'dpvNonDeliveryDays': 'N', 'dpvNoSecureLocation': 'N', 'dpvPbsa': 'N', 'dpvDoorNotAccessible': 'N', 'dpvEnhancedDeliveryCode': 'Y'}}, 'responseId': '5f0d03a8-df6a-4f7c-b94c-0c18bbfd86b7'}
+[INFO] 2023-11-29 18:26:11,682 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:26:11,689 {'result': {'verdict': {'inputGranularity': 'PREMISE', 'validationGranularity': 'PREMISE', 'geocodeGranularity': 'PREMISE', 'addressComplete': True, 'hasInferredComponents': True}, 'address': {'formattedAddress': '2708 Long Branch Drive, Marrero, LA 70072-5855, USA', 'postalAddress': {'regionCode': 'US', 'languageCode': 'en', 'postalCode': '70072-5855', 'administrativeArea': 'LA', 'locality': 'Marrero', 'addressLines': ['2708 Long Branch Dr']}, 'addressComponents': [{'componentName': {'text': '2708'}, 'componentType': 'street_number', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'Long Branch Drive', 'languageCode': 'en'}, 'componentType': 'route', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'Marrero', 'languageCode': 'en'}, 'componentType': 'locality', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'LA', 'languageCode': 'en'}, 'componentType': 'administrative_area_level_1', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': '70072'}, 'componentType': 'postal_code', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'USA', 'languageCode': 'en'}, 'componentType': 'country', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': '5855'}, 'componentType': 'postal_code_suffix', 'confirmationLevel': 'CONFIRMED', 'inferred': True}]}, 'geocode': {'location': {'latitude': 29.8541683, 'longitude': -90.0918128}, 'plusCode': {'globalCode': '76XFVW35+M7'}, 'bounds': {'low': {'latitude': 29.8540983, 'longitude': -90.0918765}, 'high': {'latitude': 29.8542679, 'longitude': -90.0917038}}, 'featureSizeMeters': 15.26942, 'placeId': 'ChIJ0Tmq6cCjIIYRXvnyNwgxWvQ', 'placeTypes': ['premise']}, 'metadata': {'business': False, 'poBox': False, 'residential': True}, 'uspsData': {'standardizedAddress': {'firstAddressLine': '2708 LONG BRANCH DR', 'cityStateZipAddressLine': 'MARRERO LA 70072-5855', 'city': 'MARRERO', 'state': 'LA', 'zipCode': '70072', 'zipCodeExtension': '5855'}, 'deliveryPointCode': '08', 'deliveryPointCheckDigit': '3', 'dpvConfirmation': 'Y', 'dpvFootnote': 'AABB', 'dpvCmra': 'N', 'dpvVacant': 'N', 'dpvNoStat': 'N', 'carrierRoute': 'C012', 'carrierRouteIndicator': 'D', 'postOfficeCity': 'MARRERO', 'postOfficeState': 'LA', 'fipsCountyCode': '051', 'county': 'JEFFERSON', 'elotNumber': '0227', 'elotFlag': 'A', 'addressRecordType': 'S', 'dpvDrop': 'N', 'dpvThrowback': 'N', 'dpvNonDeliveryDays': 'N', 'dpvNoSecureLocation': 'N', 'dpvPbsa': 'N', 'dpvDoorNotAccessible': 'N', 'dpvEnhancedDeliveryCode': 'Y'}}, 'responseId': '4a36cf1b-3ad9-4794-b36a-fa6d716122bf'}
+[INFO] 2023-11-29 18:30:24,387 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:31:36,013 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:32:40,796 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:33:09,206 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:37:42,430 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:37:42,438 [{'componentName': {'text': '2708'}, 'componentType': 'street_number', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'Long Branch Drive', 'languageCode': 'en'}, 'componentType': 'route', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'Marrero', 'languageCode': 'en'}, 'componentType': 'locality', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'LA', 'languageCode': 'en'}, 'componentType': 'administrative_area_level_1', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': '70072'}, 'componentType': 'postal_code', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'USA', 'languageCode': 'en'}, 'componentType': 'country', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': '5855'}, 'componentType': 'postal_code_suffix', 'confirmationLevel': 'CONFIRMED', 'inferred': True}]
+[INFO] 2023-11-29 18:39:13,775 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-29 18:39:13,782 [{'componentName': {'text': '2708'}, 'componentType': 'street_number', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'Long Branch Drive', 'languageCode': 'en'}, 'componentType': 'route', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'Marrero', 'languageCode': 'en'}, 'componentType': 'locality', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'LA', 'languageCode': 'en'}, 'componentType': 'administrative_area_level_1', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': '70072'}, 'componentType': 'postal_code', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'USA', 'languageCode': 'en'}, 'componentType': 'country', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': '5855'}, 'componentType': 'postal_code_suffix', 'confirmationLevel': 'CONFIRMED', 'inferred': True}]
+[INFO] 2023-11-29 18:39:13,784 validated_document True
+[INFO] 2023-11-30 10:11:42,891 New user with email ella@ella.com created.
+[INFO] 2023-11-30 10:56:07,077 HTTP Request: POST https://addressvalidation.googleapis.com/v1:validateAddress?key=AIzaSyCDr5sF7j5d-uoXZB1X1eUSrHrR3LdvkzE "HTTP/1.1 200 OK"
+[INFO] 2023-11-30 10:56:07,101 [{'componentName': {'text': '10019'}, 'componentType': 'street_number', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'South 6th Place', 'languageCode': 'en'}, 'componentType': 'route', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'Phoenix', 'languageCode': 'en'}, 'componentType': 'locality', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'AZ', 'languageCode': 'en'}, 'componentType': 'administrative_area_level_1', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': '85042'}, 'componentType': 'postal_code', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': 'USA', 'languageCode': 'en'}, 'componentType': 'country', 'confirmationLevel': 'CONFIRMED'}, {'componentName': {'text': '8326'}, 'componentType': 'postal_code_suffix', 'confirmationLevel': 'CONFIRMED', 'inferred': True}]
+[INFO] 2023-11-30 10:56:07,103 Address validation result: Pass

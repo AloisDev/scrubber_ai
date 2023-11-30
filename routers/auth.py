@@ -4,11 +4,8 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from typing import Annotated
-from dependencies import (
-    authenticate_user,
-    create_access_token,
-    get_db,
-)
+from database.db import get_db
+from database.users import authenticate_user, create_access_token
 import schemas
 from constants import ACCESS_TOKEN_EXPIRE_MINUTES
 

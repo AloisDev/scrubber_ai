@@ -96,5 +96,30 @@ class OpenAIResponse(BaseModel):
     Raw_Output: str
 
 
+class PostalAddress(BaseModel):
+    revision: int
+    regionCode: str
+    languageCode: str
+    postalCode: str
+    sortingCode: str
+    administrativeArea: str
+    locality: str
+    sublocality: str
+    addressLines: List[str]
+    recipients: List[str]
+    organization: str
+
+
+class LanguageOptions(BaseModel):
+    returnEnglishLatinAddress: bool
+
+
+class AddressValidation(BaseModel):
+    address: PostalAddress
+    previousResponseId: str
+    enableUspsCass: bool
+    languageOptions: LanguageOptions
+
+
 class Config:
     allow_mutation = True
