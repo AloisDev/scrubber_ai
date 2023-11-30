@@ -2,10 +2,8 @@ import logging
 from fastapi import Depends
 from sqlalchemy.orm import Session
 from database.db import get_db, engine
+from database.documents import process_document_in_ai
 from database.users import decode_token
-from dependencies import (
-    process_document_in_ai,
-)
 from fastapi import APIRouter
 import models
 
