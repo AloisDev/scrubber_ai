@@ -3,7 +3,7 @@ import asyncio
 import json
 import logging
 import httpx
-from constants import GOOGLE_ADDRESS_VALIDATION_URL, GOOGLE_API_KEY
+from config import GOOGLE_ADDRESS_VALIDATION_URL, GOOGLE_API_KEY
 from schemas.schemas import Document
 
 
@@ -13,11 +13,10 @@ async def validate_address(document: Document):
         "content-type": "application/json",
     }
     params = {"key": GOOGLE_API_KEY}
-
-    mapped_address_list = await map_address(document)
-
     current_delay = 0.1  # Set the initial retry delay to 100ms.
     max_delay = 5  # Set the maximum retry delay to 5 seconds.
+
+    mapped_address_list = await map_address(document)
 
     for mapped_address in mapped_address_list:
         while True:

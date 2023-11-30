@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from typing import Annotated
 from database.db import get_db
 from database.users import authenticate_user, create_access_token
-from constants import ACCESS_TOKEN_EXPIRE_MINUTES
+from config import ACCESS_TOKEN_EXPIRE_MINUTES
 from schemas.schemas import Token
 
 router = APIRouter()

@@ -6,7 +6,7 @@ from passlib.context import CryptContext
 from models.models import Base, User
 
 
-from ..constants import SQLALCHEMY_DATABASE_URL
+from ..config import SQLALCHEMY_DATABASE_URL
 
 from ..schemas import UserCreate
 
