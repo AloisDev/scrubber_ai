@@ -34,8 +34,8 @@ async def login_for_access_token(
     access_token = create_access_token(
         data={
             "sub": user.email,
-            "firstName": user.firstName,
-            "lastName": user.lastName,
+            "first_name": user.first_name,
+            "last_name": user.last_name,
         },
         expires_delta=access_token_expires,
     )

@@ -12,26 +12,26 @@ class Token(BaseModel):
 
 
 class TokenData(BaseModel):
-    firstName: str | None = None
-    lastName: str | None = None
+    first_name: str | None = None
+    last_name: str | None = None
     email: str | None = None
 
 
 class UserBase(BaseModel):
-    firstName: str
-    lastName: str
+    first_name: str
+    last_name: str
     email: str
 
 
 class UserCreate(UserBase):
-    firstName: str
-    lastName: str
+    first_name: str
+    last_name: str
     password: str
 
 
 class UserUpdate(UserBase):
-    firstName: Optional[str] = None
-    lastName: Optional[str] = None
+    first_name: Optional[str] = None
+    last_name: Optional[str] = None
     email: Optional[EmailStr] = None
     password: Optional[str] = None
 
