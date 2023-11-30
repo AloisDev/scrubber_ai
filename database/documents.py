@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 
-from schemas import Document, OpenAIResponse
+from schemas.schemas import Document, OpenAIResponse
 
 
 async def process_document_in_ai(db: Session, document: Document) -> OpenAIResponse:

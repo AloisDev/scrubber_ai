@@ -11,8 +11,9 @@ from sqlalchemy.orm import Session
 from constants import ALGORITHM, SECRET_KEY
 from jose import JWTError, jwt
 from database.db import SessionLocal
-from models import User
-from schemas import UserCreate, UserUpdate
+from models.models import User
+
+from schemas.schemas import UserCreate, UserUpdate
 from passlib.context import CryptContext
 
 

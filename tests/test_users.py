@@ -3,13 +3,14 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from passlib.context import CryptContext
 
+from models.models import Base, User
+
 
 from ..constants import SQLALCHEMY_DATABASE_URL
 
 from ..schemas import UserCreate
 
 
-from ..models import Base, User
 from ..main import app
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)

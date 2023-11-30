@@ -4,7 +4,7 @@ import json
 import logging
 import httpx
 from constants import GOOGLE_ADDRESS_VALIDATION_URL, GOOGLE_API_KEY
-from schemas import Document
+from schemas.schemas import Document
 
 
 async def validate_address(document: Document):
@@ -38,13 +38,13 @@ async def validate_address(document: Document):
                 google_response = response.json()
 
                 if google_response:
-                    logging.info(
-                        google_response["result"]["address"]["addressComponents"]
-                    )
                     validation_result = await validate_address_components(
                         google_response["result"]["address"]["addressComponents"]
                     )
-                    return validation_result
+                    return {
+                        "validation_result": validation_result,
+                        "address": google_response["result"]["address"],
+                    }
                 else:
                     raise Exception("error")
 

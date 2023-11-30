@@ -6,8 +6,8 @@ from sqlalchemy.orm import Session
 from typing import Annotated
 from database.db import get_db
 from database.users import authenticate_user, create_access_token
-import schemas
 from constants import ACCESS_TOKEN_EXPIRE_MINUTES
+from schemas.schemas import Token
 
 router = APIRouter()
 
@@ -16,9 +16,7 @@ router = APIRouter()
 # this option has a grant_type, username, password,  client_id and client_secret fields that can be used out of the box as it uses OAuth2PasswordRequestForm
 
 
-@router.post(
-    "/token", response_model=schemas.Token, tags=["Auth"], summary="Get access token"
-)
+@router.post("/token", response_model=Token, tags=["Auth"], summary="Get access token")
 async def login_for_access_token(
     form_data: Annotated[OAuth2PasswordRequestForm, Depends()],
     db: Session = Depends(get_db),

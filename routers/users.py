@@ -12,19 +12,17 @@ from database.users import (
     update_user_in_db,
 )
 from database.db import engine
-
-import models
-import schemas
+from models.models import Base
+from schemas.schemas import User, UserCreate, UserUpdate
 
 router = APIRouter()
-
-models.Base.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 
 @router.post(
-    "/users", response_model=schemas.User, tags=["Users"], summary="Create a new user."
+    "/users", response_model=User, tags=["Users"], summary="Create a new user."
 )
-async def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+async def create_user(user: UserCreate, db: Session = Depends(get_db)):
     db_user = get_user_by_email(db, email=user.email)
     if db_user:
         logging.error(f"User already registered")
@@ -36,7 +34,7 @@ async def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
 
 @router.get(
     "/users",
-    response_model=list[schemas.User],
+    response_model=list[User],
     tags=["Users"],
     summary="Get all users.",
 )
@@ -44,7 +42,7 @@ async def read_users(
     skip: int = 0,
     limit: int = 100,
     db: Session = Depends(get_db),
-    users: schemas.User = Depends(decode_token),
+    users: User = Depends(decode_token),
 ):
     users = get_all_users(db, skip=skip, limit=limit)
     return users
@@ -52,14 +50,14 @@ async def read_users(
 
 @router.get(
     "/users/{user_id}",
-    response_model=schemas.User,
+    response_model=User,
     tags=["Users"],
     summary="Get a user by id.",
 )
 async def read_user(
     user_id: int,
     db: Session = Depends(get_db),
-    db_user: schemas.User = Depends(decode_token),
+    db_user: User = Depends(decode_token),
 ):
     db_user = get_user_by_id(db, user_id=user_id)
     if db_user is None:
@@ -70,30 +68,30 @@ async def read_user(
 
 @router.patch(
     "/users/{user_id}",
-    response_model=schemas.User,
+    response_model=User,
     tags=["Users"],
     summary="Update user by id.",
 )
 async def update_user(
     user_id: int,
-    user: schemas.UserUpdate,
+    user: UserUpdate,
     db: Session = Depends(get_db),
-    current_user: schemas.UserUpdate = Depends(decode_token),
+    current_user: UserUpdate = Depends(decode_token),
 ):
     return update_user_in_db(db=db, user_id=user_id, user=user)
 
 
 @router.put(
     "/users/{user_id}",
-    response_model=schemas.User,
+    response_model=User,
     tags=["Users"],
     summary="Replace a user by id.",
 )
 async def replace_user(
     user_id: int,
-    user: schemas.UserCreate,
+    user: UserCreate,
     db: Session = Depends(get_db),
-    current_user: schemas.UserUpdate = Depends(decode_token),
+    current_user: UserUpdate = Depends(decode_token),
 ):
     return replace_user_in_db(db=db, user_id=user_id, user=user)
 
@@ -107,7 +105,7 @@ async def replace_user(
 async def delete_user(
     user_id: int,
     db: Session = Depends(get_db),
-    current_user: schemas.User = Depends(decode_token),
+    current_user: User = Depends(decode_token),
 ):
     current_user = get_user_by_id(db, user_id=user_id)
     if current_user is None:

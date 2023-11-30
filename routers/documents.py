@@ -5,26 +5,27 @@ from database.db import get_db, engine
 from database.documents import process_document_in_ai
 from database.users import decode_token
 from fastapi import APIRouter
-import models
+from models.models import Base
+from schemas.schemas import Document, OpenAIResponse, User
 
-import schemas
+
 from services.address import validate_address
 
 router = APIRouter()
 
-models.Base.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 
 @router.post(
     "/validateAndProcessDocument",
-    response_model=schemas.OpenAIResponse,
+    response_model=OpenAIResponse,
     tags=["Documents"],
     summary="Validates patient address and process the document.",
 )
 async def analyze_document(
-    document: schemas.Document,
+    document: Document,
     db: Session = Depends(get_db),
-    db_user: schemas.User = Depends(decode_token),
+    db_user: User = Depends(decode_token),
 ):
     validation_result = await validate_address(document=document)
     logging.info(f"Address validation result: {validation_result}")
@@ -33,14 +34,14 @@ async def analyze_document(
 
 @router.post(
     "/validateAllAndProcessDocument",
-    response_model=schemas.OpenAIResponse,
+    response_model=OpenAIResponse,
     tags=["Documents"],
     summary="Validates all addresses and process the document.",
 )
 async def analyze_document(
-    document: schemas.Document,
+    document: Document,
     db: Session = Depends(get_db),
-    db_user: schemas.User = Depends(decode_token),
+    db_user: User = Depends(decode_token),
 ):
     validated_document = await validate_address(document=document)
     logging.info("validated_document", validated_document)
